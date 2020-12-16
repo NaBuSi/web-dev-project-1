@@ -1,0 +1,86 @@
+@import "style.css";
+@media(max-width: 800px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "hd" "main" "sb" "ft";
+    }
+    .content .teaser {
+        align-self: stretch;
+        width: auto;
+    }
+}
+
+@media(min-width: 800px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sb sb main main main main main main" "ft ft ft ft ft ft ft ft";
+    }
+    .content .teaser {
+        align-self: stretch;
+        width: auto;
+    }
+}
+
+@media(min-width: 1080px) {
+    .content .teaser {
+        width: 400px;
+    }
+}
+
+.header {
+    grid-area: hd;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer {
+    grid-area: ft;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebar {
+    grid-area: sb;
+    padding: 15px;
+}
+
+.content {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font: 1rem 'Open Sans', Helvetica, sans-serif;
+}
+
+html,
+body {
+    min-height: 100%;
+}
