@@ -1,0 +1,18 @@
+.header-menu {
+    font-size: 1.1rem;
+}
+
+.header-menu li {
+    margin: 10px 15px 10px 15px;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.header-menu li a:hover {
+    color: #0ae46c;
+    text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+.article-image {
+    overflow: hidden;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.article-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.article-image.left {
+    float: left;
+    margin: 0 15px 15px 0px;
+}
+
+.article-image.right {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+figcaption {
+    color: black;
+    text-align: center;
+    background-color: white;
+    font: 0.9rem italic;
+}
